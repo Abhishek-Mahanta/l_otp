@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('/src/images/qwerty.png');
+}
+section{
+    width: 100%;
+    padding: 10px;
+    min-height:calc(100vh - 80px);
+}
+
+section .form_data{
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 35px 10px;
+    box-shadow: 0 0 15px -10px #2d3748;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.form_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_data h1{
+    font-size: 34px;
+    color: black;
+}
+
+.form_data p{
+    color: black;
+    font-size: 15px;
+    margin-top:9px;
+}
+
+.form_data form{
+    margin-top: 45px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.form_data form .form_input input{
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d4d0d0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 14px;
+    margin-top: 9px;
+    font-size: 14px;
+    
+}
+
+.form_data form .form_input label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form_input .two{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form_data form .form_input input:focus{
+    border:2px solid rgba(66, 153, 225,0.6);
+}
+
+
+.form_data form .form_input input::placeholder{
+    color: #8694a8;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.form_input .showpass{
+    position: absolute;
+    right: 0;
+    top:1px;
+    padding: 7px 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a4365;
+    background-color: #EDF2F7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn{
+    display:block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:green;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+form .btn:hover{
+    background-color: #97a1b1;
+}
+form .btnload{
+    background-color: #97a1b1;
+}
+
+.form_data form p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_data form a{
+    text-decoration: none;
+    color:#718096 ;
+    border-bottom: 2px solid #8694a8;
+}
+
+
+
+
+
+
+
+ /* Consultation */
+.wrapper{
+    width: 420px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #ffff;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 2px;
+  }
+  
+  .input-box input{
+    width: 100%;
+    height: 100%; 
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border: 2px solid rgba(10, 10, 10, 0.2);
+    border-radius: 10px;
+    font-size: 15px;
+    /* color: #ffff; */
+    padding: 20px 45px 20px 20px;
+  }
+  
+  
+  .wrapper .btn{
+    width: 100%;
+    height: 50px;
+    background: green;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: -20px;
+  }
+  
+  
+  .maintitle{
+    font-size: 57px;
+      font-family: cursive;
+    }
+  
+  
+    #section-hero {
+      background-size: cover;
+      background-position: bottom;
+      color: white;
+    
+  }
+  
+  .lotit{
+    font-size: 26px;
+    font-family: cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+
+  /*Scheduleappt*/
+  .templateContainer{
+    margin: 5% 0;
+}
+.templateContainer > .searchInput_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.templateContainer > .searchInput_Container input{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+}
+
+
+
+
+
+
+
+.sortContainer {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.sortContainer label {
+  margin-right: 10px;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.auth-inner {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #b0c8d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Locateme*/
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+
+/* Styles for the search bars */
+.input-container {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .input-container input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .input-container input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Styles for the submit button */
+  .button-container {
+    text-align: left;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1a73e8;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0d47a1;
+  }
+
+
+
+
+
+
+
+
+
+
+/*Doctorindex*/
+.availability-box,
+.communication-box {
+  margin-top: 100px;
+  margin-bottom: 20px; /* Add gap between the boxes */
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.options button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #e0e0e0;
+}
+
+.options button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+
+
+
+
+
+/* Style for the dashboard container */
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the animal blog list */
+.animal-blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for individual animal blog items */
+.animal-blog-item {
+  margin-bottom: 20px; /* Add space after each blog item */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+.animal-blog-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.animal-blog-item p {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*Error*/
+.error-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.error-message {
+  font-size: 44px; /* Adjust font size as needed */
+  padding: 20px;
+  border: 5px solid red; /* Example border for the error message */
+  border-radius: 5px; /* Add some rounded corners */
+}
+
+
+/*Admin landing page css*/
+.admin-landing {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #333
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  background-color: #ccc;
+}
+
+.details {
+  flex: 1;
+  padding: 40px;
+}
+
+.details h2 {
+  margin-bottom: 40px;
+}
+
+.details p {
+  font-size: 18px;
+}
+
+
+
+/*View*/
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  width: 250px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-details h2 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.product-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-details button:hover {
+  background-color: #0056b3;
+}
