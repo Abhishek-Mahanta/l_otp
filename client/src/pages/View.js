@@ -39,6 +39,7 @@ const View = () => {
        
     >
         <SwiperSlide><img src="banner1.png" alt="" style={{width: "100%", height: "40vh"}}/></SwiperSlide>
+        <SwiperSlide><img src="med.png" alt="" style={{width: "100%", height: "30vh"}}/></SwiperSlide>
         <SwiperSlide><img src="consultation.png" alt="" style={{width: "100%", height: "30vh"}}/></SwiperSlide>
         <SwiperSlide><img src="cat1.png" alt="" style={{width: "100%", height: "30vh"}}/></SwiperSlide>
         <SwiperSlide><img src="bird1.png" alt="" style={{width: "100%", height: "30vh"}}/></SwiperSlide>
