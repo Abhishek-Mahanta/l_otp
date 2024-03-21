@@ -36,6 +36,7 @@ section .form_data{
 .form_data h1{
     font-size: 34px;
     color: black;
+    text-align: center;
 }
 
 .form_data p{
@@ -497,7 +498,8 @@ th {
 
 .sidebar h2 {
   margin-bottom: 30px;
-  border-bottom: 2px solid #333
+  border-bottom: 2px solid #333;
+  padding: 10px;
 }
 
 .sidebar ul {
@@ -576,3 +578,50 @@ th {
 .product-details button:hover {
   background-color: #0056b3;
 }
+
+
+/*footer*/
+.footer {
+  background-color: lightgray;
+  padding: 40px 0 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.icons {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #555;
+}
+.mail {
+  color: black;
+}
+.facebook {
+  color: rgb(39, 148, 202);
+}
+.instagram{
+  color: orange;
+}
+.twitter{
+  color: blue;
+}
+.mail:hover{
+  color: rgb(82, 5, 5);
+}
+.facebook:hover{
+  color: rgb(4, 4, 66);
+}
+.instagram:hover{
+  color: orangered;
+}
+.twitter:hover{
+  color: rgb(5, 5, 68);
+}
+
+
+

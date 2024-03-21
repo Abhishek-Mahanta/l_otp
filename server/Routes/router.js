@@ -29,4 +29,5 @@ router.post("/admin/register", adminControllers.adminregister);
 router.post("/admin/sendotp", adminControllers.adminOtpSend);
 router.post("/admin/login", adminControllers.adminLogin);
 
+
 module.exports = router;

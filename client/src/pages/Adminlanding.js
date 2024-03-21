@@ -13,11 +13,11 @@ const AdminLanding = () => {
       <div className="sidebar">
         <h2>Access</h2>
         <ul>
-          <li onClick={() => handleItemClick('Manage Users')}>Manage Users</li>
-          <li onClick={() => handleItemClick('Manage Doctors')}>Manage Doctors</li>
-          <li onClick={() => handleItemClick('Manage Accessories')}>Manage Accessories</li>
-          <li onClick={() => handleItemClick('Manage Food')}>Manage Food</li>
-          <li onClick={() => handleItemClick('Manage Medicine')}>Manage Medicine</li>
+          <li onClick={() => handleItemClick('Users')}>Manage Users</li>
+          <li onClick={() => handleItemClick('Doctors')}>Manage Doctors</li>
+          <li onClick={() => handleItemClick('Accessories')}>Manage Accessories</li>
+          <li onClick={() => handleItemClick('Food')}>Manage Food</li>
+          <li onClick={() => handleItemClick('Medicine')}>Manage Medicine</li>
         </ul>
       </div>
       <div className="details">

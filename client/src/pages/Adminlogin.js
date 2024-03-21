@@ -57,7 +57,7 @@ const Adminlogin = () => {
                                 spiner ? <span><Spinner animation="border" /></span> : ""
                             }
                         </button>
-                        <p>Don't have an account? <NavLink to="/register">Sign up</NavLink></p>
+                        <p>Don't have an account? <NavLink to="/adminregister">Sign up</NavLink></p>
                     </form>
                 </div>
                 <ToastContainer />

@@ -74,7 +74,6 @@ const DoctorReg = () => {
               </div>
             </div>
             <button className="btn" onClick={handleSubmit}>Sign Up</button>
-            <p>Don't have an account</p>
           </form>
         </div>
         <ToastContainer />

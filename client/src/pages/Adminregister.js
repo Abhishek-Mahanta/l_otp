@@ -71,7 +71,6 @@ const Adminregister = () => {
               </div>
             </div>
             <button className='btn' onClick={handleSubmit}>Sign Up</button>
-            <p>Don't hava an account</p>
           </form>
         </div>
         <ToastContainer />
