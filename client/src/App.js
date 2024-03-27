@@ -17,12 +17,14 @@ import Adminlogin from './pages/Adminlogin';
 import Adminotp from './pages/Adminotp';
 import Admindetails from './pages/Admindetails';
 import Adminlanding from './pages/Adminlanding';
+import Contactus from './pages/Contactus';
 import Headers from './components/Headers';
 import View from './pages/View';
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Test1 from './pages/Test1';
 
 function App() {
   return (
@@ -49,7 +51,9 @@ function App() {
         <Route path='/Admindetails' element={<Admindetails />} />
         <Route path='/Adminlanding' element={<Adminlanding />} />
         <Route path='/Consultation' element={<Consultation />} />
+        <Route path='/Contactus' element={<Contactus />} />
         <Route path='/View' element={<View />} />
+        <Route path='/Test1' element={<Test1 />} />
         
       </Routes>
     </>

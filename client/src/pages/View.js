@@ -56,16 +56,22 @@ const View = () => {
         autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-
-
       >
-        <SwiperSlide><img src="banner1.png" alt="" style={{ width: "100%", height: "40vh" }} /></SwiperSlide>
-        <SwiperSlide><img src="fbanner.png" alt="" style={{ width: "100%", height: "40vh" }} /></SwiperSlide>
-        <SwiperSlide><img src="accessories.png" alt="" style={{ width: "100%", height: "30vh" }} /></SwiperSlide>
-        <SwiperSlide><img src="med.png" alt="" style={{ width: "100%", height: "30vh" }} /></SwiperSlide>
+        <SwiperSlide>
+          <img src="banner1.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="fbanner.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="accessories.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="med.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+        </SwiperSlide>
         <SwiperSlide>
           <a href="/consultation">
-          <img src="consultation.png" alt="" style={{ width: "100%", height: "30vh" }} />
+            <img src="consultation.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
           </a>
         </SwiperSlide>
       </Swiper>
@@ -73,7 +79,7 @@ const View = () => {
       <div>
         <div className="product-list">
           {animalProducts.map(product => (
-            <div key={product.id} className={`product-card ${product.id === 9 || product.id === 10 ? 'special-card' : ''}`}>
+            <div key={product.id} className="product-card">
               <img src={product.imageUrl} alt={product.name} />
               <div className="product-details">
                 <h2>{product.name}</h2>
@@ -94,31 +100,43 @@ const View = () => {
             autoplay={{ delay: 2000 }}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-
-
           >
-            <SwiperSlide><img src="banner1.png" alt="" style={{ width: "100%", height: "40vh" }} /></SwiperSlide>
-            <SwiperSlide><img src="fbanner.png" alt="" style={{ width: "100%", height: "40vh" }} /></SwiperSlide>
-            <SwiperSlide><img src="accessories.png" alt="" style={{ width: "100%", height: "30vh" }} /></SwiperSlide>
-            <SwiperSlide><img src="med.png" alt="" style={{ width: "100%", height: "30vh" }} /></SwiperSlide>
+            <SwiperSlide>
+              <img src="banner1.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="fbanner.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="accessories.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="med.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
+            </SwiperSlide>
             <SwiperSlide>
               <a href="/consultation">
-              <img src="consultation.png" alt="" style={{ width: "100%", height: "30vh" }} />
+                <img src="consultation.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", maxHeight: "40vh" }} />
               </a>
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
       <footer className="footer" >
-      <img src="PETWALE.png" alt="Logo" className="logo" />
-        <p>&copy; 2024 Petwale365.</p>
-        <FaEnvelope className="icons mail" />
+        <img src="PETWALE.png" alt="Logo" className="logo" />
+        <p>&copy; 2024 PetWale365.</p>
+        <a href="mailto:petwale365@gmail.com" target="_blank" rel="noopener noreferrer">
+          <FaEnvelope className="icons mail" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61557181606850&mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer">
         <FaFacebook className="icons facebook" />
-        <FaInstagram className="icons instagram" />
+        </a>
+        <a href="https://www.instagram.com/petwale365?igsh=Y2U4dWxcGRlb2tk" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="icons instagram" />
+        </a>
         <FaTwitter className="icons twitter" />
       </footer>
     </div>
-      );
+  );
 };
 
-      export default View;
+export default View;

@@ -23,8 +23,11 @@ const Docotp = () => {
       const data = {
         otp, email: location.state
       }
+      data.email='rf@gmail.com';
 
       const response = await doctorVerify(data);
+      console.log(response);
+      return;
       if (response?.status === 200) {
         localStorage.setItem("userdbtoken", response?.data?.userToken);
         toast.success(response?.data?.message);

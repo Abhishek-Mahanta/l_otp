@@ -102,6 +102,7 @@ section .form_data{
 
 form .btn{
     display:block;
+    transform: translateX(-11.33%);
     width: 100%;
     padding: 15px;
     border: none;
@@ -142,85 +143,88 @@ form .btnload{
 
 
  /* Consultation */
-.wrapper{
-    width: 420px;
-    background: white;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: #ffff;
-    border-radius: 20px;
-    padding: 10px 20px;
-  }
-  
-  
-  
-  .wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 2px;
-  }
-  
-  .input-box input{
-    width: 100%;
-    height: 100%; 
-    background: transparent;
-    border: 1px solid black;
-    outline: none;
-    border: 2px solid rgba(10, 10, 10, 0.2);
-    border-radius: 10px;
-    font-size: 15px;
-    /* color: #ffff; */
-    padding: 20px 45px 20px 20px;
-  }
-  
-  
-  .wrapper .btn{
-    width: 100%;
-    height: 50px;
-    background: green;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    margin-top: -20px;
-  }
-  
-  
-  .maintitle{
-    font-size: 57px;
-      font-family: cursive;
-    }
-  
-  
-    #section-hero {
-      background-size: cover;
-      background-position: bottom;
-      color: white;
-    
-  }
-  
-  .lotit{
-    font-size: 26px;
+ .wrapper{
+  width: 420px;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #ffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+
+
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 2px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%; 
+  background: transparent;
+  border: 1px solid black;
+  outline: none;
+  border: 2px solid rgba(10, 10, 10, 0.2);
+  border-radius: 10px;
+  font-size: 15px;
+  /* color: #ffff; */
+  padding: 20px 45px 20px 20px;
+}
+
+
+.wrapper .btn {
+  position: absolute;
+  bottom: 10px; 
+  left: 36%; 
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  background: green;
+  border: none;
+  outline: none;
+  border-radius: 90px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+
+.maintitle{
+  font-size: 57px;
     font-family: cursive;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: 600;
-  }
-  
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
 
+
+  #section-hero {
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+  
+}
+
+.lotit{
+  font-size: 26px;
+  font-family: cursive;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 
   /*Scheduleappt*/
@@ -625,3 +629,111 @@ th {
 
 
 
+
+
+/* 2nd Navbar style */
+.navbar {
+  padding: 1rem 0;
+}
+
+/* Navbar brand style */
+.navbar-brand img {
+  max-width: 90px;
+  height: auto;
+}
+
+/* Nav link style */
+.nav-link {
+  color: #fff; /* Text color */
+  margin: 0 10px; /* Spacing between links */
+  padding: 10px 15px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Dropdown menu style */
+.dropdown-menu {
+  background-color: #f8f9fa; /* Background color */
+}
+
+/* Dropdown item style */
+.dropdown-item {
+  color: red; /* Text color */
+  padding: 10px 15px; /* Padding around items */
+}
+
+/* Active link style */
+.nav-link.active,
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background color on hover */
+}
+
+/* Button style */
+.btn {
+  margin: 0 50px; /* Spacing between buttons */
+}
+
+/* Hoverable dropdown style */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Adjust dropdown position */
+.dropdown-menu {
+  top: 100%;
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Contact Us Page Styles */
+
+.contact-us-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-container h1 {
+  text-align: center;
+}
+
+.contact-us-container form {
+  margin-top: 20px;
+}
+
+.contact-us-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us-container input[type="text"],
+.contact-us-container input[type="tel"],
+.contact-us-container input[type="email"],
+.contact-us-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-us-container button[type="submit"] {
+  width: 100%;
+  background-color: green;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-us-container button[type="submit"]:hover {
+  background-color: rgb(3, 59, 3);
+}

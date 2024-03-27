@@ -25,7 +25,11 @@ export const docsentOtpFunction = async(data) => {
 }
 
 export const doctorVerify = async(data) => {
-    return await commonrequest("POST",`${BACKEND_URL}/doctor/login`,data)
+    console.log(data);
+    const test=await commonrequest("POST",`${BACKEND_URL}/doctor/login`,data);
+    console.log(test);
+    return;
+    return test;
 }
 
 

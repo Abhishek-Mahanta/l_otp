@@ -15,6 +15,7 @@ const nodemailer = require("nodemailer");
 
 exports.doctorregister = async (req, res) => {
     const { fname, email, password } = req.body;
+    
     if (!fname && !email && !password) {
         res.status(400).json({ error: "Please Enter All Input Data" })
     }
@@ -75,7 +76,7 @@ exports.doctorOtpSend = async (req, res) => {
 
 exports.doctorLogin = async (req, res) => {
     const { email, otp } = req.body;
-
+    
     if (!otp && !email) {
         res.status(400).json({ error: "Please Enter Your OTP and Email" })
     }
@@ -97,7 +98,7 @@ exports.doctorLogin = async (req, res) => {
 }
 
 exports.getOtp = async (req, res) => {
-
+console.log(req);
     try {
         const user = await doctors.findOne({ email: email });
 
