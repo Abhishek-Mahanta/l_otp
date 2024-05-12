@@ -48,7 +48,7 @@ const Headers = () => {
         <>
             <Navbar bg="transparent" variant="dark">
                 <Container>
-                    <NavLink to="/view" className="mx-2 text-light text-decoration-none"><img src="/PETWALE.png" style={{width:90}} alt="" /></NavLink>
+                    <NavLink to="/view" className="mx-2 text-light text-decoration-none"><img src="/petlogo.png" style={{width:90}} alt="" /></NavLink>
                     <Nav className="">
                         <NavLink to="/" className="mt-3 mx-2 text-light text-decoration-none">About Us</NavLink>
                         <NavLink to="/consultation" className="mt-3 mx-2 text-light text-decoration-none">Services</NavLink>
@@ -66,7 +66,7 @@ const Headers = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Dropdown show={showMenu} onMouseEnter={handleMenuMouseEnter} onMouseLeave={handleMenuMouseLeave}>
+                            {/* <Dropdown show={showMenu} onMouseEnter={handleMenuMouseEnter} onMouseLeave={handleMenuMouseLeave}>
                                 <Dropdown.Toggle variant="light" id="dropdown-menu">
                                     Menu
                                 </Dropdown.Toggle>
@@ -110,7 +110,7 @@ const Headers = () => {
                                     <Dropdown.Item href="#action/3">Fish</Dropdown.Item>
                                     <Dropdown.Item href="#action/3">Bird</Dropdown.Item>
                                 </Dropdown.Menu>
-                            </Dropdown>
+                            </Dropdown> */}
 
                             {/* Add more dropdowns for other items like shop, accessories, medicines */}
                         </Nav>

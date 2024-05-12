@@ -44,8 +44,8 @@ const Login = () => {
             <section>
                 <div className="form_data">
                     <div className="form_heading">
-                        <h1>Welcome to PetWale365,</h1>
-                        <h1>Log In</h1>
+                        <h1>Welcome</h1>
+                        <h1>Please Log In</h1>
                         <p>Your pet's health is in safe hands</p>
                     </div>
                     <form>
